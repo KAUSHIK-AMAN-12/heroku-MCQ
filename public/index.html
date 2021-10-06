@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+  
+
+    <div class="container1">
+
+      <div class="userform" id="userdetails" >
+        <h1>WelCome to Quiz Test </h1>
+        <label for="username">Username : </label>
+        <input id="username" style="margin-bottom : 20px;"  >
+        <br>
+        <label for="emailid">Email :  </label>
+        <input id="emailid" style="margin-bottom : 20px;">
+        <br>
+        <label for="collegename">College : </label>
+        <input id="collegename" style="margin-bottom : 20px;">
+        <br>
+        <label for="profession">Profession : </label>
+        <select name="profession" id="profession" style="margin-bottom : 20px;">
+          <option value="student">Student</option>
+          <option value="employed">Employed</option>
+          <option value="graduated">Graduated</option>
+          <option value="intern">Intern</option>
+        </select>
+
+      </div>
+
+      <div class="header hide" id="headerid">Your Game is Start Now !</div>
+      <!-----    Question and options container, hide by default       -->
+      <div class="hide" id="question-container">
+        <!--    quesno div       -->
+        <div id="question-number" class="quesnumclass">Ques 1</div>
+        <!-------   Question div          ------>
+        <div id="question" style="font-size: large">
+          Ques 1. what is your name ?
+        </div>
+        <!----------  Answer div     ------------>
+        <div class="btn-grid" id="answer-buttons">
+          <button class="btn">Option-1</button>
+          <button class="btn">Option-2</button>
+          <button class="btn">Option-3</button>
+          <button class="btn">Option-4</button>
+        </div>
+      </div>
+
+      <!---  Results <div>            -->
+      <div class="resultdiv hide" id="resultdiv">Your Result :</div>
+      <div class="detailsdiv hide" id="detailsdiv">
+        <label style="float: left">Username : </label>
+        <p class="usersdiv" id="printusername"></p>
+        <label style="float: left">College : </label>
+        <p class="usersdiv" id="printcollegename"></p>
+        <label for="totalquesdiv" style="float: left">Total Questions :</label>
+        <p class="usersdiv" id="totalquesdiv"></p>
+        <label for="total-correct" style="float: left">Correct Answers :</label>
+        <p class="usersdiv" id="total-correct"></p>
+        <label for="total-attempts" style="float: left">Total Attemps : </label>
+        <p class="usersdiv" id="total-attempts"></p>
+      </div>
+
+      <!------ Start and Next button div ----->
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn ">start</button>
+        <button id="next-btn" class="next-btn btn hide">next</button>
+        <button id="result-btn" class="result-btn btn hide">Results</button>
+        <!-- by default it will remian hide-->
+      </div>
+    </div>
+
+  
+  </body>
+</html>
