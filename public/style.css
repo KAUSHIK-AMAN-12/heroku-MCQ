@@ -1,6 +1,6 @@
 * , *::before , *::after{
     box-sizing : border-box;
-    font-family: Gotham Rounder;
+    font-family: 'Quicksand' , sans-serif;
 }
 
 /* hue values , defining in roots will give access globally  */ 
@@ -11,6 +11,7 @@
 }
 
 body{
+    background-image: url("lines-motion-8k-9x.jpg");
     --hue : var(--hue-neutral);
     padding : 0;
     margin : 0;
@@ -19,7 +20,10 @@ body{
     height : 100vh;
     justify-content: center; 
     align-items: center; 
-    background-color: hsl(var(--hue) , 100% , 20%);
+    background-position: center;
+    background-size: cover;
+    
+    
 }
 
 body.correct{
@@ -30,11 +34,11 @@ body.wrong{
 }
 
 .container1{
-    width : 800px;
+    width : 600px;
     max-width : 80%;
-    background-color: rgb(255 , 248 , 220);
+    background-color: hsla(1,50% , 10%  ,0.6) ;
     border-radius : 5px;
-    padding : 20px;
+    padding : 15px;
     box-shadow: 0 0 10px 4px;
     display: flex;
     flex-direction: column;
@@ -42,6 +46,7 @@ body.wrong{
     align-items: center;
     align-content: center;
     overflow: hidden;
+   
 
 }
 .header{
@@ -67,14 +72,30 @@ body.wrong{
     padding-top: 50px;
     padding-bottom : 50px;*/
     margin : 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding : 20px;
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content: center; 
 }
-
+.userform label { 
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    color : white;
+}
+.userform input{
+    font-size: 1em;
+    padding : 0.1em .25em;
+    background-color : hsla(201,100% , 100%  ,0.1) ; /* hsla(201, 100%, 91%, 0.3)           */
+    border : 1px solid hsl(201,100%,8%) ; 
+    border-radius: 4px;
+    outline : none ; 
+    color : white;
+    font-weight: lighter;
+}
 
 .btn-grid{
     display : grid; 
